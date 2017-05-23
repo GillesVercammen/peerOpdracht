@@ -33,10 +33,10 @@ In de app.js vind je de core van de applicatie terug, dit is de routing. De rout
 In de routing wordt gezegd: default pagina dat de user moet zien, in ons geval /login, die bevat als view: login.html en als controller LoginCtrl. 
 Dit doe joe dan voor elke pagina dat je nodig hebt, deze pagina wordt dan telken ingeladen in die ene div in de index.html.
 
-De html pagina's in angular zijn gewone html pagina's zoals jullie kennen met als enige verschil dat er angular directives zijn toegevoed. 
+De html pagina's in angular zijn gewone html pagina's zoals jullie kennen met als enige verschil dat er angular directives zijn toegevoegd. 
 Dit zijn functionaliteiten die aan een html tag kunnen toevoegd worden. Lees hier meer over in de tutorials.
 
-elke pagina heeft een aparte controller, een controller is simpel gezegd een container van javascript code die enkel geld voor die pagina.
+elke pagina heeft een aparte controller, een controller is simpel gezegd een container van javascript code die enkel uitgevoerd zal worden op die pagina.
 Dus de LoginCtrl zal enkel gebruikt worden in de login pagina, en de ServerInfoCtrl wordt enkel gebruikt op de serverinfo pagina. 
 
 Schrijf momenteel alle logica en functionaliteit uit in de serverInfoCtrl.
