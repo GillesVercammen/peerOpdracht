@@ -1,0 +1,303 @@
+@import "normalize.min.css";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*
+##############################
+HIEROND JULLIE CSS
+##############################
+ */
+
+#serverinfo .voorbeeld, #serverinfo .voorbeeldMemory {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    width: 25%;
+    text-align: center;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+##############################
+GENERAL
+##############################
+ */
+.clearfix {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+}
+body, html {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #f0f0f0;
+}
+h1 {
+    text-align: center;
+}
+.contentContainer {
+    padding: 40px 0 80px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+/*
+##############################
+LOGIN
+##############################
+ */
+#login .card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+#login .card {
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+#login .profile-img-card {
+    width: 195px;
+    height: 195px;
+    margin: 0 auto 10px;
+    display: block;
+}
+/*
+ * Form styles
+ */
+#login .profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+#login .reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#login .form-signin #inputEmail,
+#login .form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+#login .form-signin input[type=email],
+#login .form-signin input[type=password],
+#login .form-signin input[type=text],
+#login .form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#login .form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+
+#login .btn.btn-signin {
+    /*background-color: #4d90fe; */
+    background-color: rgb(104, 145, 162);
+    /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+#login .btn.btn-signin:hover,
+#login .btn.btn-signin:active,
+#login .btn.btn-signin:focus {
+    background-color: rgb(12, 97, 33);
+}
+
+#login .forgot-password {
+    color: rgb(104, 145, 162);
+}
+
+#login .forgot-password:hover,
+#login .forgot-password:active,
+#login .forgot-password:focus{
+    color: rgb(12, 97, 33);
+}
+/*
+##############################
+NAVIGATION
+##############################
+ */
+.navbar {
+    margin-bottom:0px;
+    border-radius: 0;
+}
+.navbar-brand {
+    color: white !important;
+}
+#page-wrapper {
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:52px;
+    left:0;
+    overflow: scroll;
+}
+
+#page-viewport {
+    position:relative;
+    width:100%;
+    height:100%;
+    transition: .5s ease all;
+}
+#sidebar {
+    position: fixed;
+    width: 250px;
+    min-height: 1000%;
+    left:-200px;
+    border-right: 1px solid #f0f0f0;
+    background-color:#757575;
+}
+#sidebar h3 {
+    color: white;
+    display:inline;
+    position:relative;
+    top: 12px;
+    left:15px;
+}
+#sidebar a:hover {
+    text-decoration:none;
+}
+
+#sidebar-header {
+    height: 50px;
+    border-bottom:1px solid #f0f0f0;
+}
+#sidebar-page-content {
+    position:absolute;
+    width: -webkit-calc(100% - 50px);
+    left:50px;
+    transition: .5s ease all;
+    width: 100%;
+}
+#page-wrapper.show-sidebar #page-viewport {
+    -webkit-transform: translateX(200px);
+    position: relative;
+}
+#page-wrapper.show-sidebar #sidebar-page-content {
+    width: -webkit-calc(100% - 250px);
+    position: absolute;
+}
+.burger {
+    font-weight: 700;
+    height: 36px;
+    padding-top: 10px;
+}
+#sidebar-header .btn-default {
+    color: white;
+    background-color: transparent !important;
+    border: none !important;
+    padding-right: 18px;
+}
+#sidebar-header .btn-default:hover {
+    color: white;
+    background-color: transparent !important;
+    border: none !important;
+}
+#sidebar a {
+    color: white;
+}
+.nav>li>a {
+    padding-right: 18px;
+}
+#sidebar a:hover, .nav>li>a:focus, .nav>li>a:active, #sidebar-header:hover {
+    background-color: #4f4f4f;
+}
+.topnav {
+    padding: 15px;
+    margin: 0;
+    float: right;
+    width: 150px;
+    height: 100%;
+}
+.topnav li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    color: white !important;
+    height: 20px;
+    font-size: 16px;
+}
+.topnav li:last-child {
+    margin-right: 0;
+}
+.topnav li a {
+    color: white !important;
+}

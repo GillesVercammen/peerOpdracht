@@ -1,0 +1,31 @@
+<div class="contentContainer" id="serverinfo">
+
+    <h1>SERVERINFO</h1>
+    <h1>VERVANG DEZE H2 EN ALLES HIERONDER DOOR ALLE NODIGE CONTENT</h1>
+
+    <!-- 
+        CLICK EVENT FOR ADDING/REMOVING MEMORY TO SHOW INTERACTION
+    -->
+    <a href="" ng-click="removeMemory(freeMemory)"> remove memory </a>
+    <a href="" ng-click="addMemory(freeMemory)"> add memory </a>
+
+    <!-- 
+       de inhoud van <p></p> wordt in de ng-model variabele genaamd freeMemory opgeslagen. Deze variabele is aan te spreken in de serverInfoCtrl aan de hand van $scope.freeMemory
+       dus in controller zeg ik $scope.freeMemory = 70000; dit betekent dat de variabele freeMemory 70000 als waarde zal hebben wanneer de page laadt.
+       aan de hand van de moustaches {{ }} kunnen we deze model variabelen displayed op de page. Simpelweg door de variabelenaam binnen de moustaches te plaatsen.
+       Zorg dat je in de tutorial goed het idee van ng-model begrijpt!
+    -->
+     <div class="voorbeeldMemory">
+         <h3>Free Memory:</h3>
+         <p ng-model="freeMemory">{{freeMemory}}</p>
+     </div>
+
+    <!-- VOORBEELD 2
+    GEBRUIK VAN NG-CLICK OM EEN FUNCTIE AAN TE SPREKEN IN DE CONTROLLER
+    -->
+    <a href="" ng-click="serverSwitch()"> turn server off/on </a>
+     <div class="voorbeeld">
+         <h3>Server status:</h3>
+         <p ng-model="status">{{status}}</p>
+     </div>
+</div>

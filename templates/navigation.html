@@ -1,0 +1,59 @@
+<nav class="navbar navbar-inverse">
+    <div class="navbar-brand" ui-sref="home">CVO Crescendo</div>
+
+    <ul class="topnav">
+        <li>
+            <a href=""><i class="fa fa-download" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+        </li>
+    </ul>
+
+</nav>
+<div id="page-wrapper">
+    <div id="page-viewport">
+        <div id="sidebar">
+            <div id="sidebar-header">
+                <h3>Sidebar</h3>
+                <span class="pull-right">
+          <a href="" class="toggle-sidebar btn btn-default burger" ng-click="toggleSideBar()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+            </div>
+            <ul class="nav nav-pills nav-stacked">
+                <li>
+                    <a href="#!/app/dashboard">Dashboard<span class="pull-right"><i class="fa fa-th-large" aria-hidden="true"></i></span></a>
+                </li>
+                <li>
+                    <a href="#!/app/servicebeheer">Servicebeheer<span class="pull-right"><i class="fa fa-refresh" aria-hidden="true"></i></span></a>
+                </li>
+                <li>
+                    <a href="#!/app/mailbeheer">Mailbeheer<span class="pull-right"><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                </li>
+                <li>
+                    <a href="#!/app/puntenbeheer">Puntenbeheer<span class="pull-right"><i class="fa fa-code"></i></span></a>
+                </li>
+                <li>
+                    <a href="#!/app/serverinfo">Serverinfo<span class="pull-right"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
+                </li>
+                <li>
+                    <a href="#!/app/loginfo">Log info<span class="pull-right"><i class="fa fa-archive" aria-hidden="true"></i></span></a>
+                </li>
+
+
+            </ul>
+        </div>
+
+
+        <div id="sidebar-page-content">
+            <div ui-view></div>
+        </div>
+
+
+    </div>
+</div>
