@@ -14,7 +14,7 @@ https://www.mamp.info/en/ mamp voor mac
 
 6. Open nu jullie favoriete texteditor (mijn is visual code). en open de peerOpdracht folder in C:\wamp64\www. 
 
-7. Werk enkel in the serverinfo.html / controllers.js / app.js file
+7. Werk enkel in the serverinfo.html / controllers.js / app.js / style.css file
 
 8. Bekijk de voorbeeldcode + commentaar en volg een tutorial en ga aan de slag!
 
